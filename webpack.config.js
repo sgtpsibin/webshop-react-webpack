@@ -8,9 +8,7 @@ module.exports = {
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
-          use: {
-            loader: "babel-loader"
-          }
+          use: ['babel-loader']
         },
         {
             test:/\.css$/,
@@ -20,19 +18,22 @@ module.exports = {
           test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
           use: [
             {
-              loader: 'file-loader',
+              loader: 'file-loader?name=assets/[name].[hash].[ext]',
               options: {
-                outputPath: 'assets'
+                outputPath: './assets'
               }
             }
           ]
         }
     ],
 },
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
+  },
   output: {
     path: path.resolve(__dirname,'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    
   },
   devServer: {
     port:4000,

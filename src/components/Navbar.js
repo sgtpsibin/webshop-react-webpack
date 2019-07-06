@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import { NavLink} from "react-router-dom";
+import logo from './../../public/images/logo.png';
 
 export default class Navbar extends Component {
 	render() {
 		return(
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<a className="navbar-brand" href="/">
-					<img src="./../../public/images/logo.png"/>
+					<img src={logo}/>
 				</a>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon" />
