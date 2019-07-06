@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import {HashRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import About from './components/About-page';
 import Pricing from './components/Pricing-page';
 import HomePage from './components/Home-page';
@@ -8,7 +8,8 @@ import './App.css';
 
 function App() {
 	return (	
-	<HashRouter>	
+	<Router>	
+		<div>
 		<Navbar />	
 			
 			
@@ -17,8 +18,9 @@ function App() {
 				<Route path='/pricing' exact component={Pricing} />
 				<Route path='/' component={HomePage} />
 			</Switch>	
+		</div>
 
-	</HashRouter>		
+	</Router>		
 	);
 }
 

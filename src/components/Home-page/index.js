@@ -16,7 +16,7 @@ export default class HomePage extends Component {
 						<div className="row">
 							<VeticalMenu />
 							
-								<Route path="/newest" exact component={NewestProduct}/>
+								<Route path="/newestproduct" exact component={NewestProduct}/>
 								<Route path="/hot" exact component={HotProduct}/>						
 								<Route path="/productsbyprice" exact component={ProductsbyPrice}/>						
 
