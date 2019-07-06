@@ -6,6 +6,7 @@ import Pricing from './components/Pricing-page';
 import HomePage from './components/Home-page';
 import './App.css';
 
+
 function App() {
 	return (	
 	<Router>	
@@ -17,6 +18,7 @@ function App() {
 				<Route path='/about' exact component={About} />
 				<Route path='/pricing' exact component={Pricing} />
 				<Route path='/' component={HomePage} />
+				
 			</Switch>	
 		</div>
 

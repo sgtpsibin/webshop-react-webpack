@@ -6,10 +6,11 @@ export default class VeticalMenu extends Component {
 
 
 	render() {
+		console.log('vetical menu reload');
 		return(
 			<div className="col-lg-3 mb-4 mb-lg-0">
 				<nav className="nav navbar-dark flex-column bg-primary text-white font-weight-bold shadow-sm rounded p-3">
-					<NavLink activeStyle={{color:'yellow'}} to="/" className="nav-link px-4 rounded-pill">
+					<NavLink activeStyle={{color:'yellow'}}  to="/newest" className="nav-link px-4 rounded-pill">
 						<i className="fa fa-bar-chart mr-2" />
 						Sản phẩm mới nhất
 						<span className="badge badge-success px-2 rounded-pill ml-2">45</span>

@@ -8,6 +8,7 @@ export default class ProductsbyPrice extends Component {
 		return(
 			<>
 			<Content>
+			
 				<h1>Products by Price is comming...</h1>
 
 			</Content>
