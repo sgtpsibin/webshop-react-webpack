@@ -18,9 +18,9 @@ module.exports = {
           test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
           use: [
             {
-              loader: 'file-loader?name=assets/[name].[hash].[ext]',
+              loader: 'file-loader',
               options: {
-                outputPath: './assets'
+                outputPath: './assets/img'
               }
             }
           ]

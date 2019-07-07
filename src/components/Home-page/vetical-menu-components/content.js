@@ -9,8 +9,8 @@ export default class Content extends Component {
 	render() {
 		return(
 			<div className="col-lg-9 mb-5">
-			  <div className="p-5 bg-white d-flex align-items-center shadow-sm rounded h-100">
-			    <div className="demo-content">
+			  <div className="pr-5 bg-white d-flex align-items-center shadow-sm rounded h-100">
+			    <div className="row">
 			    	{this.props.children}
 			    </div>
 			  </div>

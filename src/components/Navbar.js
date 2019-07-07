@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import { NavLink} from "react-router-dom";
 import logo from './../../public/images/logo.png';
 
+
 export default class Navbar extends Component {
 	render() {
 		console.log('navbar reload');
 		return(
+			<>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<a className="navbar-brand" href="/">
 					<img src={logo}/>
@@ -27,6 +29,8 @@ export default class Navbar extends Component {
 					</ul>
 				</div>
 			</nav>
+
+			</>
 
 			);
 	}

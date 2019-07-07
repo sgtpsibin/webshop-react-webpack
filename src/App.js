@@ -1,28 +1,28 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import About from './components/About-page';
 import Pricing from './components/Pricing-page';
 import HomePage from './components/Home-page';
+import HotProduct from './components/Home-page/vetical-menu-components/hotProduct';
+import ProductsbyPrice from './components/Home-page/vetical-menu-components/productsbyPrice';
 import './App.css';
 
 
 function App() {
 	return (	
-	<Router>	
-		<div>
-		<Navbar />	
-			
-			
-			<Switch>
-				<Route path='/about' exact component={About} />
-				<Route path='/pricing' exact component={Pricing} />
-				<Route path='/' component={HomePage} />
-				
-			</Switch>	
-		</div>
+		<>
+			<Navbar/>
 
-	</Router>		
+			<Switch>	
+				<Route exact path='/' component={HomePage} />	
+				<Route exact path='/about'  component={About} />
+				<Route exact path='/pricing'  component={Pricing} />
+				<Route exact path="/hot"  component={HotProduct}/>			
+				<Route exact path="/productsbyprice"  component={ProductsbyPrice}/>		
+			</Switch>	
+		</>	
+	
 	);
 }
 
